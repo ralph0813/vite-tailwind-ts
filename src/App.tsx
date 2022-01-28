@@ -1,9 +1,19 @@
 import * as React from 'react'
+import Header from './components/Header'
 
-const App = (): JSX.Element => (
-  <div className="h-96 w-full bg-gray-300 text-blue-800">
-    Hello TS!
-  </div>
-)
-
-export default App
+export default function App() {
+  return (
+    <div>
+      <Header />
+      <button
+        className="text-2xl"
+        onClick={() => {
+          alert('ad asd')
+        }}
+        type="button"
+      >
+        body
+      </button>
+    </div>
+  )
+}
